@@ -30,18 +30,19 @@
 
     <div id="contentBox">
       <h2>Defining Types</h2>
-      <p>Sometimes there is difficulty with inferring types automatically. To correct this, TypeScript supports an extension of JavaScript which allows you to tell TypeScript what the types should be. This can be done using an interface, such as what we see below: </p>
+      <p>Sometimes there is difficulty with inferring types automatically. To correct this, TypeScript supports an extension of JavaScript which allows you to tell TypeScript what the types should be. You can specifically describe an object using an interface, such as what we see below: </p>
       <div id="codeText">
         <p><span style="color: lightblue">interface</span><span style="color: green"> user</span> {</p>
-        <p id="indented"><span style="color: coral">name: </span><span style="color: yellow">"Carson Morris";</span></p>
-        <p id="indented"><span style="color: coral">id: </span><span style="color: yellow"> 123;</span></p>
+          <p id="indented"><span style="color: coral">name: </span><span style="color: yellow">string;</span></p>
+        <p id="indented"><span style="color: coral">id: </span><span style="color: yellow"> number;</span></p>
         <p>}</p>
       </div>
       You can also create objects with inferred types such as what we see below:
       <div id="codeText">
         <p><span style="color: lightblue">const</span><span style="color: green"> user</span> = {</p>
-        <p id="indented"><span style="color: coral">name: </span><span style="color: yellow">string;</span></p>
-        <p id="indented"><span style="color: coral">id: </span><span style="color: yellow"> number;</span></p>
+        
+          <p id="indented"><span style="color: coral">name: </span><span style="color: yellow">"Carson Morris";</span></p>
+          <p id="indented"><span style="color: coral">id: </span><span style="color: yellow"> 123;</span></p>
         <p>}</p>
       </div>
       
