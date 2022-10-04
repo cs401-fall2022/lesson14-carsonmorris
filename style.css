@@ -43,3 +43,7 @@ h2 {
     margin-right: auto;
     width: 100px;
 }
+
+#indented{
+    margin-left: 40px;
+}
