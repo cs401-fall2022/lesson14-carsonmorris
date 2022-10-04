@@ -45,7 +45,28 @@
           <p id="indented"><span style="color: coral">id: </span><span style="color: yellow"> 123;</span></p>
         <p>}</p>
       </div>
-      
+      You can then declare that a JavaScript object conforms to your new interface by using syntax like <span style="background-color: gray">: TypeName</span> after a declaration:
+      <div id="codeText">
+        <p><span style="color: lightblue">const</span><span style="color: green"> user</span> : User = {</p>
+        
+          <p id="indented"><span style="color: coral">name: </span><span style="color: yellow">"Carson Morris";</span></p>
+          <p id="indented"><span style="color: coral">id: </span><span style="color: yellow"> 123;</span></p>
+        <p>}</p>
+      </div>
+      If you provide an object that doesn’t match the interface you have provided, TypeScript will warn you:
+      <div id="codeText">
+        <p><span style="color: lightblue">interface</span><span style="color: green"> user</span> {</p>
+          <p id="indented"><span style="color: coral">name: </span><span style="color: yellow">string;</span></p>
+        <p id="indented"><span style="color: coral">id: </span><span style="color: yellow"> number;</span></p>
+        <p>}</p>
+        <p><span style="color: lightblue">const</span><span style="color: green"> user</span> : User = {</p>
+        
+          <p id="indented"><span style="color: coral">incorrectName: </span><span style="color: yellow">"Carson Morris";</span></p>
+          <p><span style="background-color: red;"">Type '{ incorrectName: string; id: number; }' is not assignable to type 'User'.
+            Object literal may only specify known properties, and 'incorrectName' does not exist in type 'User'.</span></p>
+          <p id="indented"><span style="color: coral">id: </span><span style="color: yellow"> 123;</span></p>
+        <p>}</p>
+      </div>
     </div>
 
     <div id="contentBox">
