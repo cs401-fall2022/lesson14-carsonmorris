@@ -146,7 +146,56 @@
     </div>
 
     <div id="contentBox">
-      <h2>Placeholder</h2>
+      <h2>Structural Type System</h2>
+      <p>Placeholder</p>
+      <div id="codeText">
+        placeholder
+      </div>
+     
+    </div>
+
+    <div id="contentBox">
+      <h2>Migrating From Javascript</h2>
+      <p>Placeholder</p>
+      <div id="codeText">
+        placeholder
+      </div>
+     
+    </div>
+
+    <div id="contentBox">
+      <h2>JS Projects Utilizing TypeScript</h2>
+      <p>The type system in TypeScript has different levels of strictness when working with a codebase:</p>
+      <ul>
+        <li>A type-system based only on inference with JavaScript code</li>
+        <li>Incremental typing in JavaScript via JSDoc</li>
+        <li>Using <span style = "background-color: violet;">// @ts-check</span> in a JavaScript file</li>
+        <li>TypeScript code</li>
+        <li>TypeScript with strict enabled</li>
+      </ul>
+      <p>Each step represents a move towards a safer type-system, but not every project needs that level of verification.</p>
+      <h2>Providing Type Hints in JS via JSDoc</h2>
+      <p>In a <span style = "background-color: violet;">.js</span> file, types can often be inferred. When types can’t be inferred, they can be specified using JSDoc syntax.</p>
+      <p>JSDoc annotations come before a declaration will be used to set the type of that declaration. For example:</p>
+      <div id="codeText">
+        <p>/**<span style="color: lightblue">@type </span><span style="color: green"> {number}</span>*/</p>
+        <p><span style="color: lightblue">var </span><span style="color: green"> x</span>;</p>
+        <p><span style="color: lightblue">x </span> =<span style="color: green"> 0</span>; //Ok</p>
+        <p><span style="color: lightblue">x </span> =<span style="color: green"> false</span>; //Ok!?</p>
+      </div>
+      The last line of the previous code sample would raise an error in TypeScript, but it doesn’t by default in a JS project. To enable errors in your JavaScript files add: <span style = "background-color: violet;">// @ts-check</span> to the first line in your <span style = "background-color: violet;">.js</span> files to have TypeScript raise it as an error.
+      <div id="codeText">
+        <p>// @ts-check</p>
+        <p>/**<span style="color: lightblue">@type </span><span style="color: green"> {number}</span>*/</p>
+        <p><span style="color: lightblue">var </span><span style="color: green"> x</span>;</p>
+        <p><span style="color: lightblue">x </span> =<span style="color: green"> 0</span>; //Ok</p>
+        <p><span style="color: lightblue">x </span> =<span style="color: green"> false</span>; //Not Ok</p>
+      </div>
+     
+    </div>
+
+    <div id="contentBox">
+      <h2>TypeScript for Java/C# Programmers</h2>
       <p>Placeholder</p>
       <div id="codeText">
         placeholder
