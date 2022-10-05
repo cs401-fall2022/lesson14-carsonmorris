@@ -47,3 +47,7 @@ h2 {
 #indented{
     margin-left: 40px;
 }
+
+table, th, td {
+    border: 1px solid black;
+  }

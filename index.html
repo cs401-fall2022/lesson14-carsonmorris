@@ -53,7 +53,7 @@
           <p id="indented"><span style="color: coral">id: </span><span style="color: yellow"> 123;</span></p>
         <p>}</p>
       </div>
-      If you provide an object that doesn’t match the interface you have provided, TypeScript will warn you:
+      If you provide an object that doesn’t match the interface, TypeScript will warn you:
       <div id="codeText">
         <p><span style="color: lightblue">interface</span><span style="color: green"> user</span> {</p>
           <p id="indented"><span style="color: coral">name: </span><span style="color: yellow">string;</span></p>
@@ -70,13 +70,68 @@
     </div>
 
     <div id="contentBox">
-      <h2>placeholder</h2>
-      <p>placeholder</p>
+      <h2>Composing Types</h2>
+      <p>With Typescript you can create your own types. For example, you could create the Boolean type by utilizing "Unions" by doing the following: </p>
       <div id="codeText">
-        <p>placeholder</p>
+        <p><span style="color: lightblue">type </span><span style="color: green"> myBoolean</span>  = True | False;</p>
+      </div>
+      You can also use this to set what literals are allowed to be. Some examples would be:
+
+      <div id="codeText">
+        <p><span style="color: lightblue">type </span><span style="color: green"> doorState</span>  = "locked" | "unlocked";</p>
+      </div>
+      <div id="codeText">
+        <p><span style="color: lightblue">type </span><span style="color: green"> bestStarWarsProjects</span>  = "Revenge of the Sith" | "The Mandalorian" | "Rogue One";</p>
+      </div>
+      <div id="codeText">
+        <p><span style="color: lightblue">type </span><span style="color: green"> evenNumbersUnderTen</span>  = 2 | 4 | 6 | 8;</p>
       </div>
     </div>
     
+    <div id="contentBox">
+      <h2>typeof </h2>
+      <table>
+        <tr>
+          <th>Type</th>
+          <th>Predicate</th>
+          
+        </tr>
+        <tr>
+          <td>String</td>
+          <td>typeof s === "string"</td>
+          
+        </tr>
+        <tr>
+          <td>number</td>
+          <td>typeof n === "number"</td>
+        </tr>
+        <tr>
+          <td>bolean</td>
+          <td>typeof b === "boolean"</td>
+        </tr>
+        <tr>
+          <td>undefined</td>
+          <td>typeof undefined === "undefined"</td>
+        </tr>
+        <tr>
+          <td>function</td>
+          <td>typeof f === "function"</td>
+        </tr>
+        <tr>
+          <td>array</td>
+          <td>Array.isArray(a)</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="contentBox">
+      <h2>Placeholder</h2>
+      <p>Placeholder</p>
+      <div id="codeText">
+        Placeholder
+      </div>
+     
+    </div>
 
 </body>
 
