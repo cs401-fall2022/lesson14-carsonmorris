@@ -48,6 +48,10 @@ h2 {
     margin-left: 40px;
 }
 
+#indented2{
+    margin-left: 60px;
+}
+
 table, th, td {
     border: 1px solid black;
   }
