@@ -90,6 +90,7 @@
     
     <div id="contentBox">
       <h2>typeof </h2>
+      <p>Typescript also makes use the typeof, which can be used to ensure type usage. Below is a table of potential uses for this method.</p>
       <table>
         <tr>
           <th>Type</th>
@@ -123,7 +124,7 @@
         </tr>
       </table>
 
-      Example of Using typeof:
+      <p>Example of Using typeof:</p>
       <div id="codeText">
         <p><span style="color: lightblue">function</span><span style="color: green"> funcName</span><span style="color: violet"> (obj: string | string[])</span> {</p>
 
@@ -178,9 +179,23 @@
 
     <div id="contentBox">
       <h2>TypeScript for Java/C# Programmers</h2>
-      <p>Placeholder</p>
+      <h3>Rethinking the class</h3>
+      <p>C# and Java are classic examples of Object Oriented Programming (OOP) languages. In these languages, the class is the basic unit of code organization. Forcing all functionality and data to be held in classes can be a good domain model for some problems, but not every domain needs to be represented this way.</p>
+      <p>In JavaScript, functions can live anywhere, and data can be passed around freely. This flexibility is extremely powerful. “Free” functions (those not associated with a class) working over data without an implied OOP hierarchy tends to be the preferred model for writing programs in JavaScript.</p>
+      <p>That said, you can still use classes if you like! Some problems are well-suited to being solved by a traditional OOP hierarchy, and TypeScript’s support for JavaScript classes will make these models even more powerful. TypeScript supports many common patterns such as implementing interfaces, inheritance, and static methods.</p>
       <div id="codeText">
-        placeholder
+        <p><span style="color: lightblue">interface</span><span style="color: green"> pointLike</span>{</p>
+
+          <p id="indented"><span style="color: coral">x</span>: number</p>
+          <p id="indented"><span style="color: coral">y</span>: number</p>
+        <p>}</p>
+        <p><span style="color: lightblue">function</span><span style="color: green"> funcName</span><span style="color: violet"> (obj: string | string[])</span> {</p>
+
+          <p id="indented"><span style="color: coral">console.log</span>("x = " + point.x + ", y = " + point.y);</p>
+        
+        <p>}</p>
+
+        //FINISH THIS
       </div>
      
     </div>
