@@ -182,7 +182,7 @@
       <h3>Rethinking the class</h3>
       <p>C# and Java are classic examples of Object Oriented Programming (OOP) languages. In these languages, the class is the basic unit of code organization. Forcing all functionality and data to be held in classes can be a good domain model for some problems, but not every domain needs to be represented this way.</p>
       <p>In JavaScript, functions can live anywhere, and data can be passed around freely. This flexibility is extremely powerful. “Free” functions (those not associated with a class) working over data without an implied OOP hierarchy tends to be the preferred model for writing programs in JavaScript.</p>
-      <p>That said, you can still use classes if you like! Some problems are well-suited to being solved by a traditional OOP hierarchy, and TypeScript’s support for JavaScript classes will make these models even more powerful. TypeScript supports many common patterns such as implementing interfaces, inheritance, and static methods.</p>
+      <p>That said, you can still use classes. Some problems are well-suited to being solved by OOP hierarchy, and TypeScript’s support for JavaScript classes will make these models even more powerful. TypeScript supports many common patterns such as implementing interfaces, inheritance, and static methods.</p>
       <div id="codeText">
         <p><span style="color: lightblue">interface</span><span style="color: green"> pointLike</span>{</p>
 
@@ -221,9 +221,7 @@
 
         TypeScript’s type system is also not reified: There’s nothing at runtime that will tell us that obj is Pointlike. In fact, the Pointlike type is not present in any form at runtime.
         
-        Going back to the idea of types as sets, we can think of obj as being a member of both the Pointlike set of values and the Named set of values.
-        
-        </p>
+        Going back to the idea of types as sets, we can think of obj as being a member of both the Pointlike set of values and the Named set of values.</p>
      
     </div>
 
