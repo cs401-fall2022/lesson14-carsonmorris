@@ -189,14 +189,41 @@
           <p id="indented"><span style="color: coral">x</span>: number</p>
           <p id="indented"><span style="color: coral">y</span>: number</p>
         <p>}</p>
-        <p><span style="color: lightblue">function</span><span style="color: green"> funcName</span><span style="color: violet"> (obj: string | string[])</span> {</p>
+        <p><span style="color: lightblue">interface</span><span style="color: green"> Named</span>{</p>
+
+          <p id="indented"><span style="color: coral">name</span>: string</p>
+          
+        <p>}</p>
+        <p><span style="color: lightblue">function</span><span style="color: green"> logPoint</span><span style="color: violet"> (point: pointLike)</span> {</p>
 
           <p id="indented"><span style="color: coral">console.log</span>("x = " + point.x + ", y = " + point.y);</p>
         
         <p>}</p>
 
-        //FINISH THIS
+        <p><span style="color: lightblue">function</span><span style="color: green"> logName</span><span style="color: violet"> (x: Named)</span> {</p>
+
+          <p id="indented"><span style="color: coral">console.log</span>("Hello, " + x.name);</p>
+        
+        <p>}</p>
+
+        <p><span style="color: lightblue">const</span><span style="color: green"> obj</span>{</p>
+
+          <p id="indented"><span style="color: coral">x</span>: 0</p>
+          <p id="indented"><span style="color: coral">y</span>: 0</p>
+          <p id="indented"><span style="color: coral">name</span>: "Origin"</p>
+        <p>}</p>
+
+        <p><span style="color: lightblue">logPoint</span><span style="color: green">(obj)</span>;</p>
+        <p><span style="color: lightblue">logName</span><span style="color: green">(obj)</span>;</p>
       </div>
+
+      <p>TypeScript’s type system is structural, not nominal: We can use obj as a Pointlike because it has x and y properties that are both numbers. The relationships between types are determined by the properties they contain, not whether they were declared with some particular relationship.
+
+        TypeScript’s type system is also not reified: There’s nothing at runtime that will tell us that obj is Pointlike. In fact, the Pointlike type is not present in any form at runtime.
+        
+        Going back to the idea of types as sets, we can think of obj as being a member of both the Pointlike set of values and the Named set of values.
+        
+        </p>
      
     </div>
 
