@@ -1,13 +1,13 @@
 "use strict";
-var word = document.getElementById("word");
-if (word != null) {
-    word.addEventListener("mouseover", fade);
+var changeC = document.getElementById("changeC");
+if (changeC != null) {
+    changeC.addEventListener("mouseover", changeColor);
 }
-function fade() {
-    if (word != null)
-        if (word.style.color == "purple")
-            word.style.color = "white";
+function changeColor() {
+    if (changeC != null)
+        if (changeC.style.color == "purple")
+            changeC.style.color = "white";
         else
-            word.style.color = "purple";
+            changeC.style.color = "purple";
 }
 //# sourceMappingURL=script.js.map
