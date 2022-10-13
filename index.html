@@ -21,6 +21,16 @@
         
    </div>
 
+   <div id="contentBox">
+    <h2>Demonstrating Using Typescript in the Browser</h2>
+    <p>This is an example of how you can use Typescript to create an event. Each time you hover over the text it will change color.</p>
+    
+  <h1 id="changeC">Pass Your Mouse Over Me!</h1>
+  <p>Here is an image of the code that was used to do the effect you see above.</p>
+  <img src="imgs/ScriptImage.png" alt="Code to change color on mouse hover" width="100%">
+ 
+  </div>
+
     <div id="contentBox">
           <h2>Types in Typescript</h2>
           <p>In Typescript, you can indicate a variable's type based on what you assign it to. Instead of declaring that myString is a string, you can just set it equal to a string. See below:</p>
@@ -228,22 +238,27 @@
     </div>
 
     <div id="contentBox">
-      <h2>Demonstrating Using Typescript in the Browser</h2>
-      <p>This is an example of how you can use Typescript to create an event. Each time you hover over the text it will change color.</p>
-      
-    <h1 id="changeC">Pass Your Mouse Over Me!</h1>
-    <p>Here is an image of the code that was used to do the effect you see above.</p>
-    <img src="imgs/ScriptImage.png" alt="Code to change color on mouse hover" width="100%">
-   
-    </div>
-
-    <div id="contentBox">
       <h2>Migrating From Javascript</h2>
-      <p>Placeholder</p>
+      <h3>Writing a Config File</h3>
+      <p>TypeScript uses a file called <span style="background-color: pink">tsconfig.json</span> for managing your project’s options, such as which files you want to include, and what sorts of checking you want to perform.</p>
       <div id="codeText">
-        placeholder
+        <p>{</p>
+          <p id="indented"><span style="color: blue">"compilerOptions"</span>: {</p>
+            <p id="indented"><span style="color: blue">"outDir"</span>: "./built",</p>
+              <p id="indented"><span style="color: blue">"allowJs"</span>: true,</p>
+                <p id="indented"><span style="color: blue">"target"</span>: "es5"</p>
+                <p id="indented">}</p>
+                <p id="indented"><span style="color: blue">"include"</span>: ["./src/**/*"]</p>
+        <p>}</p>
       </div>
-     
+      <p>Here we’re specifying a few things to TypeScript:</p>
+      <ol>
+        <li>Read in any files it understands in the src directory (with include).</li>
+        <li>Accept JavaScript files as inputs (with allowJs).</li>
+        <li>Emit all of the output files in built (with outDir).</li>
+        <li>ranslate newer JavaScript constructs down to an older version like ECMAScript 5 (using target).</li>
+      </ol>
+     <p>At this point, if you try running <span style="background-color: pink">tsc</span> at the root of your project, you should see output files in the <span style="background-color: pink">built</span> directory. The layout of files in <span style="background-color: pink">built</span> should look identical to the layout of <span style="background-color: pink">src</span>. You should now have TypeScript working with your project.</p>
     </div>
 
 </body>
