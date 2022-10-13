@@ -9,16 +9,16 @@ function hello() {
 /**
  * turns demo red
  */
-function turnBlue() {
+function turnRed() {
     if (document != null) {
-        var c = document.getElementById("title").style.color;
-        if (c === 'blue') {
-            document.getElementById("title").style.color = "black";
+        var c = document.getElementById("demo").style.color;
+        if (c === 'red') {
+            document.getElementById("demo").style.color = "black";
         }
         else {
-            document.getElementById("title").style.color = "blue";
+            document.getElementById("demo").style.color = "red";
         }
     }
 }
-export { hello, turnBlue };
+export { hello, turnRed };
 //# sourceMappingURL=app.js.map
