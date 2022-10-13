@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h1 id="demo" onclick="turnBlue()">Click ME!</h1>
+    <script type="module">
+        import {turnBlue} from '/build/app.js'
+        window.turnBlue = turnBlue;
+    </script>
     <h1>
         Learn Typescript: For Javascript Programmers
     </h1>
