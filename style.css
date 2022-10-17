@@ -1,5 +1,5 @@
 html {
-    background-image: url(imgs/fair-use-background-image.jpeg);
+    background-image: linear-gradient(black,red,orange, yellow, green, blue, purple, indigo, white);
     background-color: gray;
 }
 
