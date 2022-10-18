@@ -19,6 +19,13 @@ h2 {
     font-style: italic;
     text-align: center;
 }
+a{
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 13pt;
+}
+a:link { text-decoration: none; }
 
 #codeText{
     background-color: black;
@@ -31,7 +38,7 @@ h2 {
     margin: 6px;
 }
 
-#contentBox{
+.contentBox{
     background-color: lightgray;
     padding: 15px;
     border-radius: 10px;

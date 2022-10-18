@@ -14,14 +14,28 @@
     <h1>
         Learn Typescript: For Javascript Programmers
     </h1>
-    <div id="contentBox">
+    <div class="contentBox">
         <img src="imgs/919832.png" alt="Typescript Logo" width="100px" class="centerImg">
         <h2>Introduction</h2>
         <p>This page will cover the basics of Typescript and its corresponding relationship with Javascript. Typescript and Javascript have an unusual relationship, where Javascript code is already Typescript code. For each section below, we will cover some of the basics of Typescript. </p>
         
    </div>
 
-   <div id="contentBox">
+   <div class="contentBox">
+    <h2>Navigation</h2>
+    <a href="#section1" >Demonstrating</a>|
+    <a href="#section2" >Types in Typescript</a>|
+    <a href="#section3" >Defining Types</a>|
+    <a href="#section4" >Composing Types</a>|
+    <a href="#section5" >typeOf Method</a>|
+    <a href="#section6" >Generics</a>|
+    <a href="#section7" >Projects Utilizing Typescript</a>|
+    <a href="#section8" >Typescript for Java/C# Programmers</a>|
+    <a href="#section9" >Migrating</a>
+ 
+  </div>
+
+   <div class="contentBox" id="section1">
     <h2>Demonstrating Using Typescript/Javascript in the Browser</h2>
     <p>This is an example of how you can use Typescript to create an event. Typescript is compiled into Javascript, which can be ran in the browser. For this example, each time you hover over the text it will change color between white, red, and blue.</p>
     
@@ -31,7 +45,7 @@
  
   </div>
 
-    <div id="contentBox">
+    <div class="contentBox" id="section2">
           <h2>Types in Typescript</h2>
           <p>In Typescript, you can indicate a variable's type based on what you assign it to. Instead of declaring that myString is a string, you can just set it equal to a string. See below:</p>
           <div id="codeText">
@@ -40,7 +54,7 @@
           This offers a type system that does not need to be explicitly defined. Typescript knows that myString is a string based on what it is assigned to. 
     </div>
 
-    <div id="contentBox">
+    <div class="contentBox" id="section3">
       <h2>Defining Types</h2>
       <p>Sometimes there is difficulty with inferring types automatically. To correct this, TypeScript supports an extension of JavaScript which allows you to tell TypeScript what the types should be. You can specifically describe an object using an interface, such as what we see below: </p>
       <div id="codeText">
@@ -81,7 +95,7 @@
       </div>
     </div>
 
-    <div id="contentBox">
+    <div class="contentBox" id="section4">
       <h2>Composing Types</h2>
       <p>With Typescript you can create your own types. For example, you could create the Boolean type by utilizing "Unions" by doing the following: </p>
       <div id="codeText">
@@ -100,7 +114,7 @@
       </div>
     </div>
     
-    <div id="contentBox">
+    <div class="contentBox" id="section5">
       <h2>typeof </h2>
       <p>Typescript also makes use the typeof, which can be used to ensure type usage. Below is a table of potential uses for this method.</p>
       <table>
@@ -147,7 +161,7 @@
       </div>
     </div>
 
-    <div id="contentBox">
+    <div class="contentBox" id="section6">
       <h2>Generics</h2>
       <p>You can also use generics in Typescript. A common example is with Arrays. An array without generics can contain anything, but specifying generics describes what the array can hold. </p>
       <div id="codeText">
@@ -158,7 +172,7 @@
      
     </div>
 
-    <div id="contentBox">
+    <div class="contentBox" id="section7">
       <h2>JS Projects Utilizing TypeScript</h2>
       <p>The type system in TypeScript has different levels of strictness when working with a codebase:</p>
       <ul>
@@ -189,7 +203,7 @@
      
     </div>
 
-    <div id="contentBox">
+    <div class="contentBox" id="section8">
       <h2>TypeScript for Java/C# Programmers</h2>
       <h3>Rethinking the class</h3>
       <p>C# and Java are classic examples of Object Oriented Programming (OOP) languages. In these languages, the class is the basic unit of code organization. Forcing all functionality and data to be held in classes can be a good domain model for some problems, but not every domain needs to be represented this way.</p>
@@ -237,7 +251,7 @@
      
     </div>
 
-    <div id="contentBox">
+    <div class="contentBox" id="section9">
       <h2>Migrating From Javascript</h2>
       <h3>Writing a Config File</h3>
       <p>TypeScript uses a file called <span style="background-color: pink">tsconfig.json</span> for managing your project’s options, such as which files you want to include, and what sorts of checking you want to perform.</p>
