@@ -29,7 +29,7 @@
     <a href="#section4" >Composing Types</a>|
     <a href="#section5" >typeOf Method</a>|
     <a href="#section6" >Generics</a>|
-    <a href="#section7" >Projects Utilizing Typescript</a>|
+    <a href="#section7" >Providing Type Hints</a>|
     <a href="#section8" >Typescript for Java/C# Programmers</a>|
     <a href="#section9" >Migrating</a>
  
@@ -173,7 +173,7 @@
     </div>
 
     <div class="contentBox" id="section7">
-      <h2>JS Projects Utilizing TypeScript</h2>
+      <h2>Providing Type Hints in JS via JSDoc</h2>
       <p>The type system in TypeScript has different levels of strictness when working with a codebase:</p>
       <ul>
         <li>A type-system based only on inference with JavaScript code</li>
@@ -183,7 +183,7 @@
         <li>TypeScript with strict enabled</li>
       </ul>
       <p>Each step represents a move towards a safer type-system, but not every project needs that level of verification.</p>
-      <h2>Providing Type Hints in JS via JSDoc</h2>
+      
       <p>In a <span style = "background-color: violet;">.js</span> file, types can often be inferred. When types can’t be inferred, they can be specified using JSDoc syntax.</p>
       <p>JSDoc annotations come before a declaration will be used to set the type of that declaration. For example:</p>
       <div id="codeText">
@@ -270,7 +270,7 @@
         <li>Read in any files it understands in the src directory (with include).</li>
         <li>Accept JavaScript files as inputs (with allowJs).</li>
         <li>Emit all of the output files in built (with outDir).</li>
-        <li>ranslate newer JavaScript constructs down to an older version like ECMAScript 5 (using target).</li>
+        <li>Translate newer JavaScript constructs down to an older version like ECMAScript 5 (using target).</li>
       </ol>
      <p>At this point, if you try running <span style="background-color: pink">tsc</span> at the root of your project, you should see output files in the <span style="background-color: pink">built</span> directory. The layout of files in <span style="background-color: pink">built</span> should look identical to the layout of <span style="background-color: pink">src</span>. You should now have TypeScript working with your project.</p>
     </div>
